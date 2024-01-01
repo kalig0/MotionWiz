@@ -9,6 +9,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useRouter } from "next/navigation";
 
 const MotionWiz: React.FC = () => {
+    initFirebase();
     const CHARACTER_LIMIT = 32;
     const ENDPOINT: string = "https://7pkmmzlacl.execute-api.us-east-1.amazonaws.com/prod/generate_exercises_and_explanation"
     const [prompt, setPrompt] = React.useState("");
