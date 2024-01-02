@@ -48,7 +48,7 @@ const Form: React.FC<FormProps> = (props) => {
     <>
       <div className="mb-6 text-motion-white">
         <p>Tell me a body part and click submit.</p>
-        <p>I will generate exericses for you.</p>
+        <p>I will recommend exericses for you.</p>
       </div>
 
       <input
