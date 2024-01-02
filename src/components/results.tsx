@@ -27,7 +27,7 @@ const Results: React.FC<ResultsProps> = (props) => {
     <>
       <div>
         {resultSection(
-          "Prompt",
+          "Body Part",
           <div className="text-lg font-bold">{props.prompt}</div>
         )}
         {resultSection("Exercises", exerciseElements)}
