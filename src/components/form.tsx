@@ -7,6 +7,7 @@ interface FormProps {
 }
 
 const Form: React.FC<FormProps> = (props) => {
+  const noPrompt = props.prompt.length == 0;
   const promptAtLimit = props.prompt.length < props.characterLimit;
   const updatePromptValue = (text: string) => {
     if (text.length <= props.characterLimit) {
@@ -42,7 +43,7 @@ const Form: React.FC<FormProps> = (props) => {
       <button
         className="bg-gradient-to-r from-motion-orange to-motion-red disabled:opacity-50 w-full p-2 rounded-md"
         onClick={props.onSubmit}
-        disabled={props.isLoading || !promptAtLimit}
+        disabled={props.isLoading || !promptAtLimit || noPrompt}
       >
         Submit
       </button>
