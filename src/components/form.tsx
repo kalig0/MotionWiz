@@ -17,15 +17,21 @@ const Form: React.FC<FormProps> = (props) => {
 
   let statusColor = "text-slate-400";
   let statusText = "";
+  let loadingText = "";
   if (!promptAtLimit) {
     statusColor = "text-motion-orange";
     statusText = `Input must be less than ${props.characterLimit} characters`;
+  }
+  if (props.isLoading) {
+    loadingText = "Loading..."
   }
 
   return (
     <>
       <div className="mb-6 text-motion-white">
-        <p>Tell me a body part and I will generate exericses for you.</p>
+        <p>Tell me a body part and click submit.</p>
+        <p>I will generate exericses for you.</p>
+        <p>{loadingText}</p>
       </div>
 
       <input
