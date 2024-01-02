@@ -92,7 +92,7 @@ const MotionWiz: React.FC = () => {
                 height={75}
                 className="mx-auto"
               />
-              <h1 className={gradientText + " text-3xl font-light"}>
+              <h1 className={gradientText + " text-4xl font-bold"}>
                 MotionWiz
               </h1>
               <div className={gradientText}>Your AI workout assistant</div>
