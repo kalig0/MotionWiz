@@ -5,10 +5,6 @@ interface FormProps {
   signIn: any;
 }
 
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
-
-const provider = new GoogleAuthProvider();
-
 const AuthForm: React.FC<FormProps> = (props) => {
   const gradientText =
     "text-motion-white text-transparent bg-clip-text bg-gradient-to-r from-motion-orange to-motion-red w-fit mx-auto";
