@@ -17,7 +17,7 @@ const Results: React.FC<ResultsProps> = (props) => {
   const resultSection = (label: string, body: any) => {
     return (
       <div className="bg-motion-light-blue p-4 rounded-md my-2">
-        <div className="font-bold text-sm mb-2">{label}</div>
+        <div className="font-bold text-sm mb-2 text-motion-red">{label}</div>
         <div>{body}</div>
       </div>
     );
